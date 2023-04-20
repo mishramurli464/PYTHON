@@ -1,7 +1,7 @@
 # PANDAS  
-Pandas is a powerful open-source data analysis and manipulation library for Python. It provides tools for data manipulation,  
-cleaning, and analysis, including the ability to work with structured and unstructured data, and supports a wide range of data formats  
-such as CSV, Excel, SQL databases, and more.     
+Pandas is a powerful open-source data analysis and manipulation library for Python. It provides tools for data manipulation,     
+cleaning, and analysis, including the ability to work with structured and unstructured data, and supports a wide range of data formats  N
+such as CSV, Excel, SQL databases, and more.      
 
 ## DataFrame  
 In Pandas, a DataFrame is a two-dimensional labeled data structure with columns of potentially different types, similar to a spreadsheet or    
@@ -44,7 +44,7 @@ df['marks'][0]=50
 df.index=['first','second','third']
 df.T # transpose operation
 ```
-#Series  
+# Series  
 In Pandas, a Series is a one-dimensional labeled array that can hold any data type such as integers, floats, strings, or even Python objects.  
 It is similar to a column in a spreadsheet or a column in a SQL table.  
 ```py   
@@ -62,3 +62,39 @@ print(my_series[['a', 'c', 'e']])
 # perform arithmetic operations on the series
 my_series = my_series * 2
 print(my_series)
+```
+
+# View and Copy concept in Pandas  
+In Pandas, a view is a reference to the original data and a copy is a completely new and independent copy of the data. Understanding the difference   
+between a view and a copy is important when working with large datasets, as it can affect performance and the results of your analysis.  
+
+**1)** View:  
+A view is a reference to the original data. When you create a view of a DataFrame, any changes made to the view will affect the original DataFrame.
+Views are memory-efficient and can be useful when working with large datasets. Views can be created using the .loc and .iloc methods. Here is an example:  
+```py  
+import pandas as pd
+data = {'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+        'Age': [25, 30, 35, 40],
+        'City': ['New York', 'London', 'Paris', 'Tokyo']}
+df = pd.DataFrame(data)
+# Creating a view
+view = df.loc[df['Age'] > 30]
+# Modifying the view
+view['City'] = 'Berlin'
+print(df)
+```
+**2)** Copy:  
+A copy is a completely new and independent copy of the data. When you create a copy of a DataFrame, any changes made to the copy will not affect the original DataFrame. Copies are memory-intensive and can be slower than views when working with large datasets. Copies can be created using the .copy() method. Here is an example:
+```py  
+import pandas as pd
+
+data = {'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+        'Age': [25, 30, 35, 40],
+        'City': ['New York', 'London', 'Paris', 'Tokyo']}
+df = pd.DataFrame(data)
+# Creating a copy
+copy = df.copy()
+# Modifying the copy
+copy['City'] = 'Berlin'
+print(df)
+
