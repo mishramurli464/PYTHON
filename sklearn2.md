@@ -3,7 +3,7 @@
 In scikit-learn, pipelines are a powerful tool for combining multiple data processing steps and machine learning models into a single workflow. Pipelines ensure that the data preprocessing and 
 model training steps are properly orchestrated, making the code more concise, readable, and efficient.
 Here's an example of using a pipeline in scikit-learn:  
-
+```py
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
@@ -35,6 +35,7 @@ y_pred = pipeline.predict(X_test)
 # Evaluate the model performance
 accuracy = pipeline.score(X_test, y_test)
 print("Accuracy:", accuracy)
+```
 
 In the above example, we create a pipeline that consists of three steps:
 
