@@ -1,5 +1,6 @@
 # GridSearchCV
 GridSearchCV in scikit-learn is a technique used for hyperparameter tuning, which involves systematically searching for the best combination of hyperparameters for a machine learning model. It automates the process of finding the optimal hyperparameters by exhaustively searching through a predefined grid of parameter values and evaluating the model's performance for each combination.
+**Hyperparameter tuning** is an important step in machine learning to find the best combination of hyperparameters for a given model. Hyperparameters are parameters that are set before training the model and cannot be learned from the data. They control the behavior of the learning algorithm and can significantly impact the model's performance.
 
 Here's how GridSearchCV works in scikit-learn:
 
