@@ -69,9 +69,11 @@ Subset Accuracy: Measures the exact match ratio for the entire set of labels.
 
 ## meta estimators in sklearn
 estimators are objects that learn from data and make predictions. They form the core components of machine learning models in scikit-learn. Estimators implement the fit method to learn from data 
-and the predict method to make predictions on new data. **meta-estimators** are high-level estimators that wrap around other estimators, allowing you to modify the behavior of the base estimators
+and the predict method to make predictions on new data.  
+**meta-estimators** are high-level estimators that wrap around other estimators, allowing you to modify the behavior of the base estimators
 or combine multiple estimators into a single model. Meta-estimators provide additional functionality and flexibility to enhance the performance and capabilities of the underlying base estimators.
-Here are some commonly used meta-estimators in scikit-learn:
+Here are some commonly used meta-estimators in scikit-learn:  
+
 VotingClassifier: This meta-estimator combines multiple individual classifiers (e.g., logistic regression, decision tree, support vector machine) and aggregates their predictions using majority 
 voting or weighted voting. It can be useful for ensemble learning and model combination.
 
