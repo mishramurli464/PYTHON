@@ -1,7 +1,8 @@
 #INHERITANCE
-'''Inheritance is a fundamental concept of object-oriented programming (OOP) that 
-allows a class to inherit properties and methods from another class'''
+'''Inheritance is a fundamental concept of object-oriented programming (OOP) that   
+allows a class to inherit properties and methods from another class'''  
 **ex 1**
+```py
 class Employee:
  def __init__(self,name,id):
   self.id=id
@@ -17,3 +18,4 @@ class Programmer(Employee):
 e1= Programmer("murli",420)
 e1.show_details()
 e1.showlanguage()
+```
