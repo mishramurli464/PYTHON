@@ -1,4 +1,4 @@
-#INHERITANCE
+# INHERITANCE  
 '''Inheritance is a fundamental concept of object-oriented programming (OOP) that   
 allows a class to inherit properties and methods from another class'''  
 **ex 1**
