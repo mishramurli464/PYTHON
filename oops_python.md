@@ -1,8 +1,8 @@
 # Built-in class function  
-*getattr(object_name, attribute_name)*-->retriving the attribute value for the specified object
-*setattr(object_name, attribute_name, new_value)*--> for updating new value to the attribute for the specified object
-*delattr(object_name, attribute_name)*--> removing the the attribute for the specified object
-*hasattr(object_name, attribute_name)*--> for checking if the attribute is present for the specified object
+*getattr(object_name, attribute_name)*-->retriving the attribute value for the specified object  
+*setattr(object_name, attribute_name, new_value)*--> for updating new value to the attribute for the specified object  
+*delattr(object_name, attribute_name)*--> removing the the attribute for the specified object  
+*hasattr(object_name, attribute_name)*--> for checking if the attribute is present for the specified object  
 
 
 # INHERITANCE  
