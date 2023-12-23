@@ -1,3 +1,10 @@
+# Built-in class function  
+*getattr(object_name, attribute_name)*-->retriving the attribute value for the specified object
+*setattr(object_name, attribute_name, new_value)*--> for updating new value to the attribute for the specified object
+*delattr(object_name, attribute_name)*--> removing the the attribute for the specified object
+*hasattr(object_name, attribute_name)*--> for checking if the attribute is present for the specified object
+
+
 # INHERITANCE  
 '''Inheritance is a fundamental concept of object-oriented programming (OOP) that allows a class to inherit properties and methods from another class'''    
 **ex 1**
@@ -20,8 +27,8 @@ e1.show_details()
 e1.showlanguage()
 ```
 
-**ex 2**
---> the super() function is used to refer to the parent class or superclass. It allows you to call methods defined in the superclass from the subclass,  
+**ex 2**  
+--> the super() function is used to refer to the parent class or superclass.It allows you to call methods defined in the superclass from the subclass,  
 enabling you to extend and customize the functionality inherited from the parent class.  
 ```py
 class Employee:
@@ -42,3 +49,4 @@ e1= Programmer("murli",420)
 e1.show_details()
 e1.showlanguage("murli",420,"python")
 ```
+
