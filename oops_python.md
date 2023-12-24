@@ -3,7 +3,25 @@
 *setattr(object_name, attribute_name, new_value)*--> for updating new value to the attribute for the specified object  
 *delattr(object_name, attribute_name)*--> removing the the attribute for the specified object  
 *hasattr(object_name, attribute_name)*--> for checking if the attribute is present for the specified object  
+**ex**
+```py
+class Employee:
+ def __init__(self,name,id):
+  self.id=id
+  self.name=name
 
+ def show_details(self):
+  print(f"the name of employee bearing id {self.id} is {self.name}")
+e1=Employee("mur",2)
+e1.show_details()
+print(getattr(e1, "id"))
+setattr(e1, "id",5)
+print(e1.id)
+print(e1.__dict__)
+delattr(e1, "id")
+print(e1.__dict__)
+hasattr(e1, "id")
+```
 
 # INHERITANCE  
 '''Inheritance is a fundamental concept of object-oriented programming (OOP) that allows a class to inherit properties and methods from another class'''    
