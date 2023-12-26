@@ -22,6 +22,12 @@ delattr(e1, "id")
 print(e1.__dict__)
 hasattr(e1, "id")
 ```
+# Built-in class atribute
+__dict__ :- Dictionary containing class's namespace  
+__doc__ - Class documentation string.  
+__name__ :- Class Name  
+__module__ :- Module name in which class is defined  
+__bases__ :- List of base classes  
 
 # INHERITANCE  
 '''Inheritance is a fundamental concept of object-oriented programming (OOP) that allows a class to inherit properties and methods from another class'''    
