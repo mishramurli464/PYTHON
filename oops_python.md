@@ -23,7 +23,7 @@ print(e1.__dict__)
 hasattr(e1, "id")
 ```
 # Built-in class atribute
-__dict__ :- Dictionary containing class's namespace  
+____dict____ :- Dictionary containing class's namespace  
 __doc__ - Class documentation string.  
 __name__ :- Class Name  
 __module__ :- Module name in which class is defined  
