@@ -28,7 +28,24 @@ __doc__ - Class documentation string.
 __name__ :- Class Name  
 __module__ :- Module name in which class is defined  
 __bases__ :- List of base classes  
+**ex**
+```py
+class Employee:
+'''This is employee class for maintaining employee data'''
+def __init__(self, nm, ag):
+ self.name=nm
+ self.age=ag
+def display(self):
+ print(f"name is: {self.name} and age is {self.age}")
+ 
+e1=Employee('jay',21)
+e2-Employee('raj',22)
 
+print(Employee._doc_)
+print(Employee.__dict__)
+print(Employee.__name__)
+print(Employee.__module__)
+```
 # INHERITANCE  
 '''Inheritance is a fundamental concept of object-oriented programming (OOP) that allows a class to inherit properties and methods from another class'''    
 **ex 1**
