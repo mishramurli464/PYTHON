@@ -90,4 +90,60 @@ e1= Programmer("murli",420)
 e1.show_details()
 e1.showlanguage("murli",420,"python")
 ```
+## types of inheritance 
+**Single Inheritance**: In single inheritance, a class inherits from only one base class. This is the simplest form of inheritance.  
+```py
+class BaseClass:
+    pass
 
+class DerivedClass(BaseClass):
+    pass
+```
+
+**Multiple Inheritance**: Multiple inheritance allows a class to inherit attributes and methods from more than one base class.  
+```py
+class BaseClass1:
+    pass
+
+class BaseClass2:
+    pass
+
+class DerivedClass(BaseClass1, BaseClass2):
+    pass
+```  
+**Multilevel Inheritance**: In multilevel inheritance, a class is derived from a class which itself is derived from another class.   
+``py
+class BaseClass:
+    pass
+
+class DerivedClass1(BaseClass):
+    pass
+
+class DerivedClass2(DerivedClass1):
+    pass
+```
+**Hierarchical Inheritance**: Hierarchical inheritance involves multiple derived classes inheriting from the same base class.
+```py
+class BaseClass:
+    pass
+
+class DerivedClass1(BaseClass):
+    pass
+
+class DerivedClass2(BaseClass):
+    pass
+```  
+**Hybrid Inheritance**: Hybrid inheritance is a combination of more than one type of inheritance. It's a mix of single, multiple, multilevel, or hierarchical inheritance.  
+```py
+class BaseClass1:
+    pass
+
+class BaseClass2:
+    pass
+
+class DerivedClass1(BaseClass1):
+    pass
+
+class DerivedClass2(BaseClass1, BaseClass2):
+    pass
+```
