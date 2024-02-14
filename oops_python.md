@@ -146,4 +146,4 @@ class DerivedClass1(BaseClass1):
 
 class DerivedClass2(BaseClass1, BaseClass2):
     pass
-```
+```  
