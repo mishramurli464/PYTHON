@@ -112,7 +112,7 @@ class DerivedClass(BaseClass1, BaseClass2):
     pass
 ```  
 **Multilevel Inheritance**: In multilevel inheritance, a class is derived from a class which itself is derived from another class.   
-``py
+``py  
 class BaseClass:
     pass
 
@@ -121,9 +121,9 @@ class DerivedClass1(BaseClass):
 
 class DerivedClass2(DerivedClass1):
     pass
-```
+```  
 **Hierarchical Inheritance**: Hierarchical inheritance involves multiple derived classes inheriting from the same base class.
-```py
+```py  
 class BaseClass:
     pass
 
@@ -134,7 +134,7 @@ class DerivedClass2(BaseClass):
     pass
 ```  
 **Hybrid Inheritance**: Hybrid inheritance is a combination of more than one type of inheritance. It's a mix of single, multiple, multilevel, or hierarchical inheritance.  
-```py
+```py  
 class BaseClass1:
     pass
 
