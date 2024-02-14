@@ -114,7 +114,7 @@ class DerivedClass(BaseClass1, BaseClass2):
 
 **Multilevel Inheritance**: In multilevel inheritance, a class is derived from a class which itself is derived from another class.   
 
-``py  
+```py  
 class BaseClass:
     pass
 
@@ -122,7 +122,7 @@ class DerivedClass1(BaseClass):
     pass
 
 class DerivedClass2(DerivedClass1):
-    pass
+    pass  
 ```
 
 **Hierarchical Inheritance**: Hierarchical inheritance involves multiple derived classes inheriting from the same base class.
