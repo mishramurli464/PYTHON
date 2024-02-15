@@ -150,4 +150,18 @@ class DerivedClass1(BaseClass1):
 
 class DerivedClass2(BaseClass1, BaseClass2):
     pass
-```  
+``` 
+# Encapsulation 
+Wrapping up data and methods working on data together in a single unit(i.e class) is called encapsulation.  
+![image](https://github.com/mishramurli464/PYTHON/assets/128781536/e64a7c53-4ccf-44b6-8c23-4ea58c638d83)  
+
+**Data hiding** in encapsulation refers to the practice of restricting access to certain attributes or methods of a class, typically to prevent direct modification or manipulation   
+from outside the class.   
+**Access modifiers** it is basically used to resolve data hiding.(it basically restrics data access outside the class in encapsulation)  
+it can be achieved  by declaring the data members and methods of class as priate.  
+types--  
+1) **public member**-- accessible anyhwere outside the class by using object refrence.
+2)**priate member**-- accesible within class. accessible via methods only.
+3)**protected member**-- This convention indicates that they are intended for internal use within the class and its subclasses. However, they can still be accessed from outside the class.  
+
+
