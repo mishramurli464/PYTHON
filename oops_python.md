@@ -169,10 +169,10 @@ types--
     def display(self):
         print(self.x)  # public method
 
-  obj = MyClass(5)
-  print(obj.x)  # accessing public attribute
-  obj.display()  # calling public method
- ```
+   obj = MyClass(5)
+   print(obj.x)  # accessing public attribute
+   obj.display()  # calling public method
+   ```
 2)**priate member**-- accesible within class. accessible via methods only.  
 3)**protected member**-- This convention indicates that they are intended for internal use within the class and its subclasses. However, they can still be accessed from outside the class.   
 
