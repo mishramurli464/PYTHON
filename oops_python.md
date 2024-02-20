@@ -187,7 +187,7 @@ obj = MyClass(5)
 # obj.__display()  # This will raise an error
 ```
 3)**protected member**-- This convention indicates that they are intended for internal use within the class and its subclasses. However, they can still be accessed from outside the class.  
-## Nmae mangling  
+## Name mangling  
 it is a concept used in python to access private data outside the class.  
 ```py
 class MyClass:
@@ -203,5 +203,9 @@ obj = MyClass()
 print(obj._MyClass__private_attribute)  # Outputs: 42
 print(obj._MyClass__private_method())   # Outputs: 42
 ```
+## Advantages of encapsulation  
+ 1) Security
+ 2) simplicity
+ 3) prevents accidental modifications  
 
 
