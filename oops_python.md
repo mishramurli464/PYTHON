@@ -160,30 +160,20 @@ from outside the class.
 **Access modifiers** it is basically used to resolve data hiding.(it basically restrics data access outside the class in encapsulation)  
 it can be achieved  by declaring the data members and methods of class as priate.  
 types--  
-1) **public member**-- accessible anyhwere outside the class by using object refrence.  
+1) **public member**-- accessible anyhwere outside the class by using object refrence.
+   ```py
+   class MyClass:
+    def __init__(self, x):
+        self.x = x  # public attribute
+
+    def display(self):
+        print(self.x)  # public method
+
+  obj = MyClass(5)
+  print(obj.x)  # accessing public attribute
+  obj.display()  # calling public method
+ ```
 2)**priate member**-- accesible within class. accessible via methods only.  
 3)**protected member**-- This convention indicates that they are intended for internal use within the class and its subclasses. However, they can still be accessed from outside the class.   
 
-class Finance:
 
-def _init_(self):
-
-self.revenue=100000
-
-self.number_of_sales=114
-
-f1=Finance()
-
-print(f1.dict)
-
-class HR:
-
-def _init_(self):
-
-self.number_of_emp=32
-
-f1.revenue=1
-
-h1=HR()
-
-print(f1.dict)
