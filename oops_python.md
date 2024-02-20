@@ -186,6 +186,22 @@ obj = MyClass(5)
 # print(obj.__x)  # This will raise an error
 # obj.__display()  # This will raise an error
 ```
-3)**protected member**-- This convention indicates that they are intended for internal use within the class and its subclasses. However, they can still be accessed from outside the class.   
+3)**protected member**-- This convention indicates that they are intended for internal use within the class and its subclasses. However, they can still be accessed from outside the class.  
+## Nmae mangling  
+it is a concept used in python to access private data outside the class.  
+```py
+class MyClass:
+    def __init__(self):
+        self.__private_attribute = 42
+
+    def __private_method(self):
+        return self.__private_attribute
+
+obj = MyClass()
+
+# Accessing private attribute and method using name mangling
+print(obj._MyClass__private_attribute)  # Outputs: 42
+print(obj._MyClass__private_method())   # Outputs: 42
+```
 
 
