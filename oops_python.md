@@ -326,5 +326,19 @@ h1=Hotel('Taj hotel', 20000)
 h2=Hotel('Panchratna', 10000)
 print(h1>h2) #True
 ```
+## Method overloading
+when a class contains two or more methods with samne name but different behavior is called method overloading. 
+However, unlike some other programming languages such as Java or C++, Python does not support traditional method overloading based on the number or type of arguments. Instead, Python utilizes a technique called "polymorphism" or "duck typing" to achieve similar functionality.  
+```py
+class Addition:
+ def add(self,num1,num2):
+   print("addition is:", num1+num2)
 
+ def add(self,num1, num2,num3): 
+   print("addition is:",num1+num2+num3)
+
+a=Addition()
+#a.add(10,20)
+a.add(10,20,30)
+```
 
