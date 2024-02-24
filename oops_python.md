@@ -215,7 +215,7 @@ if a variable, object or a method performs different beavior according to situat
 ex- '+' , 'len()' etc can perform different behavior at diferent situations.  
 ## polymorphism in inheritance
 ex-  
-'''py
+```py
 class Veh:
   def __init__(self,name, color,price):
 
