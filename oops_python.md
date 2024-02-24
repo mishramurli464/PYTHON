@@ -253,7 +253,7 @@ c1.max_speed()
 
 ## over riding built-in function
 
-Overriding built-in functions in Python involves defining a method in a class with the same name as a built-in function, thus changing its behavior for instances of that class. This is a form of polymorphism where the behavior of a built-in function is altered for objects of a specific class.
+Overriding built-in functions in Python involves defining a method in a class with the same name as a built-in function, thus changing its behavior for instances of that class. This is a form of polymorphism where the behavior of a built-in function is altered for objects of a specific class.  
  ex-
 ```py
 class cart:
@@ -263,6 +263,51 @@ c1=cart()
 print(c1)
 ```
 output-- **its a cart class**  
+
+ex1--  
+```py
+class Cart:
+ def __init__(self, basket1, basket2,basket3):
+
+  self.clothes=basket1
+
+  self.electronics=basket2
+
+  self.other=basket3
+
+ def __len__(self):
+
+  print("total numbe rof items in cart:")
+
+  return len(self.clothes)+len(self.electronics)+len(self.other)
+
+shantanu=Cart(['pant', 'shirt', 't-shirt'], ['earphone', 'mobile'], ['chair'])
+
+print(len(shantanu)) #6
+```
+-- in the above ex the __len__ function is over riden in the class for its instance.  
+## operator overloading  
+When same operator behaves differently depending on values.  
+You can assign a new meaning to operators also and you can extend functionality of operators  
+You can change default behaviour of operator using over-riding.  
+```py
+num1=10
+num2=20
+num3="10"
+num4="20"
+print(num1+num2) #30
+print(num1.__add__(num2)) #30
+print(int.__add__(num1, num2)) #30
+print(num3+num4) #1020
+print(num3.__add__(num4)) #1020
+print(str.__add__(num3, num4)) #1020
+print(dir(int))
+
+#step-1:- check datatype of left operand. #int
+#step2:- go in that class
+#step3:- call_add_() function
+```
+--in the above example operator(i.e"+") behaving differently for different values  
 
 
 
