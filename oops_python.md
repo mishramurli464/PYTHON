@@ -208,4 +208,61 @@ print(obj._MyClass__private_method())   # Outputs: 42
  2) simplicity
  3) prevents accidental modifications  
 
+# Polymorphism  
+real life ex- me infront of my parents and me in front of my friends  
+Polymorphism in Python refers to the ability of python object to take many forms.  
+if a variable, object or a method performs different beavior according to situation is called polymorphism.  
+ex- '+' , 'len()' etc can perform different behavior at diferent situations.  
+## polymorphism in inheritance
+ex-
+'''py
+class Veh:
+  def __init__(self,name, color,price):
+
+   self.name=name
+
+   self.color=color
+
+   self.price=price
+
+  def get_details(self): 
+   print("name is:", self.name) 
+   print("color is:", self.color)
+   print("price is:", self.price)
+
+  def max_speed(self):
+   print("maximum speed limit is 100")
+
+  def gear(self):
+   print("gear change is 6")
+
+class Car(Veh):
+
+  def max_speed(self):
+   print("maximum speed limit is 140")
+
+  def gear(self):
+   print("gear change is 6") 
+
+v1=Veh("bike",'black',10000)
+c1=Car("ferrari","red",10000000)
+v1.max_speed()
+c1.max_speed()
+```
+--in the above ex we can see same method (i.e max_speed()) for different objects giving different values.
+
+## over riding built-in function
+
+Overriding built-in functions in Python involves defining a method in a class with the same name as a built-in function, thus changing its behavior for instances of that class. This is a form of polymorphism where the behavior of a built-in function is altered for objects of a specific class.
+ ex-
+```py
+class cart:
+  def __str__(self):
+   return "its a cart class"
+c1=cart()
+print(c1)
+```
+output-- **its a cart class**  
+
+
 
