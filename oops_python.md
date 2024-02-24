@@ -3,7 +3,7 @@
 *setattr(object_name, attribute_name, new_value)*--> for updating new value to the attribute for the specified object  
 *delattr(object_name, attribute_name)*--> removing the the attribute for the specified object  
 *hasattr(object_name, attribute_name)*--> for checking if the attribute is present for the specified object  
-**ex**
+**ex**  
 ```py
 class Employee:
  def __init__(self,name,id):
@@ -21,7 +21,7 @@ print(e1.__dict__)
 delattr(e1, "id")
 print(e1.__dict__)
 hasattr(e1, "id")
-```
+```  
 # Built-in class atribute
 ____dict____ :- Dictionary containing class's namespace  
 __doc__ - Class documentation string.  
@@ -214,7 +214,7 @@ Polymorphism in Python refers to the ability of python object to take many forms
 if a variable, object or a method performs different beavior according to situation is called polymorphism.  
 ex- '+' , 'len()' etc can perform different behavior at diferent situations.  
 ## polymorphism in inheritance
-ex-
+ex-  
 '''py
 class Veh:
   def __init__(self,name, color,price):
@@ -248,7 +248,7 @@ v1=Veh("bike",'black',10000)
 c1=Car("ferrari","red",10000000)
 v1.max_speed()
 c1.max_speed()
-```
+```  
 --in the above ex we can see same method (i.e max_speed()) for different objects giving different values.
 
 ## over riding built-in function
