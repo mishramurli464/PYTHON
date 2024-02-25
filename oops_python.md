@@ -342,3 +342,61 @@ a=Addition()
 a.add(10,20,30)
 ```
 -- in the above example as python doesnot support polymorphism so here the last method in the class(i.e def add(self,num1, num2,num3)) will be called  and hence it will give type error for "a.add(10,20)"
+## how to achieve method overloading  
+
+In Python, method overloading can be achieved through a combination of default arguments and variable-length argument lists. By defining a single method with default arguments or by using *args and **kwargs, you can create a flexible method that can handle different combinations of arguments.  
+ex-1->  **Using default arguments**  
+```py
+class Calci:
+
+  def add(self, num1=None, num2=None, num3=None):
+
+   if num1!=None and num2!=None and num3!=None:
+     print("Addition is:", num1+num2+num3)
+
+   elif num1!=None and num2!=None: 
+    print("Addition is:", num1+num2)
+
+   else:
+    print("incorrect parameters provided")
+
+c1=Calci()
+
+c1.add(10,20)
+
+c1.add(10,20,30)
+```
+```py
+class Area:
+
+ def area(self,l=0,b=0):
+
+  if l>0 and b>0:
+   print("area of rectangle:",l*b)
+
+  elif l>0 and b==0:
+   print("area of sqaure is:",l*l)
+
+a=Area()
+
+a.area(10) #100
+
+a.area(10,20) #200
+```
+
+ex-2--> **Using Variable-length Argument Lists (*args):**  
+```py
+class MyClass:
+    def my_method(self, *args):
+        if len(args) == 0:
+            print("No arguments")
+        elif len(args) == 1:
+            print("One argument:", args[0])
+        else:
+            print("Multiple arguments:", args)
+
+obj = MyClass()
+obj.my_method()          # No arguments
+obj.my_method(10)        # One argument: 10
+obj.my_method(10, 20)    # Multiple arguments: (10, 20)
+```  
