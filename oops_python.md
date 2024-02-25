@@ -341,4 +341,4 @@ a=Addition()
 #a.add(10,20)
 a.add(10,20,30)
 ```
-
+-- in the above example as python doesnot support polymorphism so here the last method in the class(i.e def add(self,num1, num2,num3)) will be called  and hence it will give type error for "a.add(10,20)"
