@@ -399,4 +399,46 @@ obj = MyClass()
 obj.my_method()          # No arguments
 obj.my_method(10)        # One argument: 10
 obj.my_method(10, 20)    # Multiple arguments: (10, 20)
-```  
+```
+
+# Nested Class   
+In Python, you can define a class inside another class, which is known as nested classes.   
+Nested classes are useful when you have a class that is closely related to another class and doesn't make sense to be used outside of it.  
+It helps in keeping the code organized and expressing the relationship between the classes.  
+ex-1->  
+```py
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+        self.engine = self.Engine(1500)  # Creating an instance of the nested Engine class
+
+    def drive(self):
+        print(f"Driving {self.make} {self.model}")
+
+    class Engine:
+        def __init__(self, horsepower):
+            self.horsepower = horsepower
+
+        def start(self):
+            print("Engine started")
+
+        def stop(self):
+            print("Engine stopped")
+
+# Creating an instance of the Car class
+my_car = Car("Toyota", "Camry")
+
+# Accessing attributes and methods of the Car class
+print(f"Car: {my_car.make} {my_car.model}")
+my_car.drive()
+
+# Accessing attributes and methods of the nested Engine class through the instance of the Car class
+print(f"Engine horsepower: {my_car.engine.horsepower}")
+my_car.engine.start()
+my_car.engine.stop()
+```
+--We define a Car class that has an attribute make, model, and a nested class Engine.  
+  The nested Engine class represents the car's engine, containing an attribute horsepower.  
+  The Car class creates an instance of the Engine class (engine) in its constructor.
+  We create an instance of the Car class (my_car) and access its attributes and methods, as well as those of the nested Engine class.
