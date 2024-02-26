@@ -441,4 +441,36 @@ my_car.engine.stop()
 --We define a Car class that has an attribute make, model, and a nested class Engine.  
   The nested Engine class represents the car's engine, containing an attribute horsepower.  
   The Car class creates an instance of the Engine class (engine) in its constructor.
-  We create an instance of the Car class (my_car) and access its attributes and methods, as well as those of the nested Engine class.
+  We create an instance of the Car class (my_car) and access its attributes and methods, as well as those of the nested Engine class.   
+  
+## Accessing Members of One Class Inside Another Class   
+--In Python, you can access members (attributes and methods) of one class inside another class by creating an instance of the first class within the second class or by passing an instance of the first class as an argument to the methods of the second class. This allows you to use the attributes and methods of the first class as if they were part of the second class.  
+```py
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+    def bark(self):
+        print(f"{self.name} says Woof!")
+
+class Person:
+    def __init__(self, dog_name):
+        self.dog = Dog(dog_name)  # Creating an instance of the Dog class
+
+    def greet_dog(self):
+        print(f"Hello {self.dog.name}!")
+        self.dog.bark()  # Accessing the Dog's bark method
+
+# Creating an instance of the Person class
+person = Person("Buddy")
+
+# Accessing methods and attributes of the Dog class through the instance of the Person class
+person.greet_dog()
+```
+---We define two classes, Dog and Person.
+The Dog class has an attribute name and a method bark() to simulate a dog's bark.   
+The Person class has an attribute dog which is an instance of the Dog class.  
+The Person class also has a method greet_dog() which greets the dog and triggers the dog's bark() method.  
+When we create an instance of the Person class and call the greet_dog() method, it accesses the name attribute and bark() method of the Dog class through the dog attribute of the Person instance.  
+
+# Destructor
