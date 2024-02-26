@@ -344,7 +344,7 @@ a.add(10,20,30)
 -- in the above example as python doesnot support polymorphism so here the last method in the class(i.e def add(self,num1, num2,num3)) will be called  and hence it will give type error for "a.add(10,20)"
 ## how to achieve method overloading  
 
-In Python, method overloading can be achieved through a combination of default arguments and variable-length argument lists. By defining a single method with default arguments or by using *args and **kwargs, you can create a flexible method that can handle different combinations of arguments.  
+In Python, method overloading can be achieved through a combination of default arguments and variable-length argument lists. By defining a single method with default arguments or by using *args( a waay to take arguments as a tupple) and **kwargs( a waay to take arguments as a dictonary), you can create a flexible method that can handle different combinations of arguments.  
 ex-1->  **Using default arguments**  
 ```py
 class Calci:
@@ -387,7 +387,7 @@ a.area(10,20) #200
 ex-2--> **Using Variable-length Argument Lists (*args):**  
 ```py
 class MyClass:
-    def my_method(self, *args):
+    def my_method(self, *args): # "*args" it is a waay to take arguments as a tupple
         if len(args) == 0:
             print("No arguments")
         elif len(args) == 1:
