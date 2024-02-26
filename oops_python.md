@@ -473,4 +473,70 @@ The Person class has an attribute dog which is an instance of the Dog class.
 The Person class also has a method greet_dog() which greets the dog and triggers the dog's bark() method.  
 When we create an instance of the Person class and call the greet_dog() method, it accesses the name attribute and bark() method of the Dog class through the dog attribute of the Person instance.  
 
-# Destructor
+# Destructor  
+A special method(__del__()) which destroys object and releases resources tied to the object.  
+the tied resource is basically the database connection, cache created etc.   
+Destructor is called automatically when the object is destoyed.  
+**garbage collecter**  
+a program to delete refrences.  
+it runs automatically.  
+it does memory management.  
+
+destructor ex--  
+```py
+class vsp:
+ def __init__(self): 
+  print("Hi This is Constructor Method")
+
+ def my(self): 
+  print("this is Normal Method ")
+
+ def __del__(self):
+  print("Destructor Method Called..") 
+  print("Object Deleted......")
+
+ob=vsp ()
+ob.my ()
+del ob
+```
+
+## Storing objects in List  
+```py
+class Movie(object):
+
+ def __init__(self, title,mins, hero):
+  self.title=title
+  self.runtime=mins 
+  self.hero=hero
+
+ def printer(self):
+  print(f"Title is : {self.title}\nruntime is: {self.runtime}\nhero is: {self.hero}")
+
+list_of_movies=[]
+
+while True:
+
+  title=input("Enter the title of movie:")
+
+  mins=input("Enter the runtime of movie:")
+
+  hero=input("Enter the name of hero of movie:")
+
+  obj=Movie(title,mins, hero)
+
+  list_of_movies.append(obj)
+
+  print("Movie added into the list")
+
+  ans=input("Do you want to add another movie(y/n)")
+
+  if ans!='y':
+   break
+        
+print("All movies information:")
+for obj in list_of_movies:
+        obj.printer()
+```  
+
+
+
