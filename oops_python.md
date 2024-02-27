@@ -538,5 +538,62 @@ for obj in list_of_movies:
         obj.printer()
 ```  
 
+# Decorators in python   
+Decorators in Python are functions that modify or enhance the behavior of other functions or methods. They allow you to wrap additional functionality around existing   
+functions without modifying their code directly.   
 
+**1) Function decorators**   
+-- 
+```py
+def div(a,b):
+  print(a/b)
 
+def smart_div(func): # function decorator
+  def inner (a,b):
+   if a<b:
+    a,b = b,a
+   return func(a,b)
+  return inner
+
+div1=smart_div(div)
+div1(2,4)
+```
+**2) Class decorators** 
+Class decorators are decorators that are applied to classes instead of functions. They can be used to modify the behavior of a class, such as adding new methods or attributes,   
+without modifying the class itself. Class decorators are defined similarly to function decorators but take a class as input instead of a function. Here's a basic example:  
+```py
+def my_class_decorator(cls):
+    class NewClass(cls):
+        def new_method(self):
+            print("New method added to the class")
+    return NewClass
+
+@my_class_decorator
+class MyClass:
+    def existing_method(self):
+        print("Existing method of the class")
+
+obj = MyClass()
+obj.existing_method()
+obj.new_method()
+```
+
+**2) Decorator Classes**   
+Decorator classes are a variation of decorators where the decorator itself is implemented as a class instead of a function. Decorator classes implement the "__call__()" method to define their behavior, and instances of the decorator class can be used to wrap around functions or methods. Here's an example:  
+```py
+class MyDecorator:
+    def __init__(self, func):
+        self.func = func
+
+    def __call__(self, *args, **kwargs):
+        print("Something is happening before the function is called.")
+        result = self.func(*args, **kwargs)
+        print("Something is happening after the function is called.")
+        return result
+
+@MyDecorator
+def my_function():
+    print("The original function is called.")
+
+my_function()
+```
