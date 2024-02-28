@@ -647,14 +647,22 @@ d1=Duster()
 t1.mileage() 
 ```
 
-**Abstract class :-**
+**Abstract class :-**  
 -A class which contains one or more abstract methods and concrete methods.  
 -Abstract class must have at least one abstract method.   
 -An abstract class can be considered as a blueprint for other classes.  
 -A class which is inherited from ABC class.   
 
-**Keep in mind..**
+**Keep in mind..**  
 -You can't instantiate abstract classes.  
 -Abstract class requires at least one method abstract.  
 -All abstract methods present in abstract class must be implemented in child classes. Else, child class becomes abstract.  
 -If there is abstract method in class, that class must be abstract class.  
+
+**Uses of abstraction:-**  
+
+1. when we have large code and functionalities.  
+2. Your abstract class is like an API for other subclasses.  
+3. used when a third party is going to provide implementations.  
+4. When we have different implementations for different objects for same component.  
+5. For creating interfaces.  
