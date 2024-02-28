@@ -678,3 +678,10 @@ Find the length of above list
 
 You don't know internal implementation of len() function
 ```
+examples- list,stack(push, pop), ect  
+
+**Advantages**  
+--Reduce development time because of pre-defined implementations  
+--Less bugs  
+--Helps in debugging  
+--Easy to change implementations  
