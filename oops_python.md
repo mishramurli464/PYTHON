@@ -609,16 +609,52 @@ Hiding complex implementation details and showing only signatures to users.
 --Create abstract methods in your abstract class.  
 
 **Syntax:-**
-
-from abc import ABC, abstractmethod class Employee(ABC): #abstract methods #concrete methods  
-Abstract methods:- method that has a declaration but does not have an implementation.  
-Concrete methods:- Normal methods  
-
+```py
+from abc import ABC,abstractmethod   
+class Employee(ABC):
+  #abstract methods 
+  #concrete methods     
+#Abstract methods:- method that has a declaration but does not have an implementation.    
+#Concrete methods:- Normal methods    
+```
 ex--  
+```py
+from abc import ABC, abstractmethod
 
+class Car(): 
+  @abstractmethod
+  def mileage(self):
+    pass
+  
+  def color(self): 
+    print("white")
+
+class Maruti_Suzuki(Car):
+  def mileage(self): 
+    print("mileage is 30kmph")
+
+class TATA(Car):
+  def mileage(self): 
+    print("mileage is 35 kmph")
+
+class Duster(Car):
+  def mileage(self): 
+    print("mileage is 40kmph")
+
+m1=Maruti_Suzuki()
+t1=TATA()
+d1=Duster()
+t1.mileage() 
+```
 
 **Abstract class :-**
-A class which contains one or more abstract methods and concrete methods.  
-Abstract class must have at least one abstract method.   
-An abstract class can be considered as a blueprint for other classes.  
-A class which is inherited from ABC class.   
+-A class which contains one or more abstract methods and concrete methods.  
+-Abstract class must have at least one abstract method.   
+-An abstract class can be considered as a blueprint for other classes.  
+-A class which is inherited from ABC class.   
+
+**Keep in mind..**
+-You can't instantiate abstract classes.  
+-Abstract class requires at least one method abstract.  
+-All abstract methods present in abstract class must be implemented in child classes. Else, child class becomes abstract.  
+-If there is abstract method in class, that class must be abstract class.  
