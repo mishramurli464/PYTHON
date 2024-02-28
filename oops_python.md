@@ -597,3 +597,28 @@ def my_function():
 
 my_function()
 ```
+# Abstraction  
+The process by which data and functions are defined in such a way that only essential details can be seen and unnecessary implementations are hidden is called Data Abstraction.   
+Hiding complex implementation details and showing only signatures to users.  
+
+## How abstraction achieved in python :-
+
+--By using abc module :- ABC class  
+                         abstractmethod  
+--Inherit your class from ABC class  
+--Create abstract methods in your abstract class.  
+
+**Syntax:-**
+
+from abc import ABC, abstractmethod class Employee(ABC): #abstract methods #concrete methods  
+Abstract methods:- method that has a declaration but does not have an implementation.  
+Concrete methods:- Normal methods  
+
+ex--  
+
+
+**Abstract class :-**
+A class which contains one or more abstract methods and concrete methods.  
+Abstract class must have at least one abstract method.   
+An abstract class can be considered as a blueprint for other classes.  
+A class which is inherited from ABC class.   
