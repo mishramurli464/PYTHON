@@ -174,18 +174,19 @@ types--
    print(obj.x)  # accessing public attribute
    obj.display()  # calling public method
    ```
-2)**priate member**-- accesible within class. accessible via methods only.   
+2)**priate member**-- accesible within class. accessible via methods and that method should not be private.  
 ```py
 class MyClass:
     def __init__(self, x):
         self.__x = x  # private attribute
 
-    def __display(self):
-        print(self.__x)  # private method
+    def display(self):
+        print(self.__x)  #not a private method
 
-obj = MyClass(5)
+obj = MyClass(5) 
+
 # print(obj.__x)  # This will raise an error
-# obj.__display()  # This will raise an error
+obj.display()     # it will give 5
 ```
 3)**protected member**-- This convention indicates that they are intended for internal use within the class and its subclasses. However, they can still be accessed from outside the class.  
 ## Name mangling  
