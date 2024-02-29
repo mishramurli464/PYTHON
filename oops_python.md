@@ -256,6 +256,7 @@ c1.max_speed()
 ## over riding built-in function
 
 Overriding built-in functions in Python involves defining a method in a class with the same name as a built-in function, thus changing its behavior for instances of that class. This is a form of polymorphism where the behavior of a built-in function is altered for objects of a specific class.  
+**imp--** whenever an operation is performed with the objects of the class then respective magic methods are searched inside the class, if not found it will give error.   
  ex-
 ```py
 class cart:
