@@ -71,6 +71,7 @@ e1.showlanguage()
 **ex 2**  
 --> the super() function is used to refer to the parent class or superclass.It allows you to call methods defined in the superclass from the subclass,  
 enabling you to extend and customize the functionality inherited from the parent class.  
+-- It allows you to invoke methods and access attributes defined in the superclass without explicitly naming the superclass.  
 ```py
 class Employee:
  def __init__(self,name,id):
