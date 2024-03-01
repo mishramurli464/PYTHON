@@ -695,4 +695,44 @@ Magic methods, also known as dunder methods (short for "double underscore")
 are special methods in Python that are surrounded by double underscores on both sides of their names.  
 These methods are used to provide functionality that is automatically invoked in response to certain operations or behaviors on objects.   
 Magic methods allow classes to emulate built-in types or implement operator overloading, making objects behave like those of built-in types  
-**ex--** __init__, __add__, __str__ etc
+**ex--** __init__, __add__, __str__ etc   
+
+# Modules in python  
+ --a module is a file containing Python code.  
+ --The code within a module can consist of variable definitions, function definitions, and classes,among other things.  
+ --Modules allow you to logically organize your Python code into reusable units, making it easier to manage and maintain larger projects.  
+ **ex--**  
+ ```py
+# math_operations.py
+
+def add(x, y):
+    return x + y
+def subtract(x, y):
+    return x - y
+def multiply(x, y):
+    return x * y
+def divide(x, y):
+    if y != 0:
+        return x / y
+    else:
+        return "Error: Division by zero"
+```
+
+```py
+# main.py
+import math_operations
+
+# Use functions from the math_operations module
+result_add = math_operations.add(5, 3)
+print("Result of addition:", result_add)
+
+result_subtract = math_operations.subtract(10, 4)
+print("Result of subtraction:", result_subtract)
+
+result_multiply = math_operations.multiply(6, 7)
+print("Result of multiplication:", result_multiply)
+
+result_divide = math_operations.divide(20, 5)
+print("Result of division:", result_divide)
+```
+
