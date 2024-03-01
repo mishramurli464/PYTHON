@@ -737,5 +737,24 @@ print("Result of division:", result_divide)
 ```
 
 # Packages in python  
-It is a directory which allows you to organize related modules and subpackages together, making it easier to manage and maintain large codebases.  
- The directory must contain a special file called ____init____.py
+--It is a directory which allows you to organize related modules and subpackages together, making it easier to manage and maintain large codebases.   
+--The directory must contain a special file called ____init___.py.  
+--which can be empty or can contain initialization code for the package. The presence of this file indicates to Python that the directory should be treated as a package.  
+**ex--**  
+**1)Package Structure**  
+```py
+my_package/
+│
+├── __init__.py
+├── module1.py
+├── module2.py
+└── subpackage/
+    ├── __init__.py
+    └── submodule1.py
+```
+
+**2)Module Importing:**   
+```py
+import my_package.module1
+```
+
