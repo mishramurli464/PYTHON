@@ -668,7 +668,7 @@ t1.mileage()
 2. Your abstract class is like an API for other subclasses.  
 3. used when a third party is going to provide implementations.  
 4. When we have different implementations for different objects for same component.  
-5. For creating interfaces.
+5. For creating interfaces  
 
 # ADT(Abstract Data Type) IN PYTHON  
 ADT's are like user defined datatypes which define operations on values using functions without specifying what is there inside a function and how operations are performed.   
