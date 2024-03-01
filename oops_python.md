@@ -736,3 +736,6 @@ result_divide = math_operations.divide(20, 5)
 print("Result of division:", result_divide)
 ```
 
+# Packages in python  
+It is a directory which allows you to organize related modules and subpackages together, making it easier to manage and maintain large codebases.  
+ The directory must contain a special file called "___init__".py
