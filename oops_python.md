@@ -758,3 +758,17 @@ my_package/
 import my_package.module1
 ```
 
+# Memory Management in python  
+In python, Memory Management is totally automatic.
+two scripts--
+1) **Python Memory Manager** -- allocation of memory.  
+2) **Python Garbage collector**-- de-allocation of memory.
+## Memory allocation  
+--two types  
+
+1)Stack Memory  
+--The stack is a region of memory used for storing local variables and function call frames.(storing global refrences)  
+2)Heap Memory
+--The heap is a region of memory used for dynamic memory allocation.  
+Objects and data structures that are too large to fit on the stack or require dynamic memory allocation are stored on the heap.  
+(used to store all values and objects)
