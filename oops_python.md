@@ -777,4 +777,5 @@ two scripts--
 Objects and data structures that are too large to fit on the stack or require dynamic memory allocation are stored on the heap.  
 (used to store all values and objects)  
 
-![Uploading WhatsApp Image 2024-03-13 at 12.18.03 PM (2).jpeg…]()
+![image](https://github.com/mishramurli464/PYTHON/assets/128781536/3a109844-9bb0-41ee-aca2-da71703697a2)
+
