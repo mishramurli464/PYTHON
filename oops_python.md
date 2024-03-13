@@ -1,3 +1,7 @@
+
+![Uploading WhatsApp Image 2024-03-13 at 12.18.03 PM (1).jpeg…]()
+
+
 # Built-in class function  
 *getattr(object_name, attribute_name)*-->retriving the attribute value for the specified object  
 *setattr(object_name, attribute_name, new_value)*--> for updating new value to the attribute for the specified object  
